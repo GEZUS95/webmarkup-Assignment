@@ -7,3 +7,21 @@ header{
 header img {
     width: 150px;
 }
+header h1{
+    background-color: darkgrey;
+}
+header h2{
+    background-color: gray;
+}
+nav{
+    background-color: purple;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li {
+    display: inline;
+}
+video{
+    background-color: indianred;
+}
