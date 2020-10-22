@@ -4,24 +4,24 @@ header{
     background-color: #000000;
     color: #ffffff;
 }
-header img {
+header > img {
     width: 150px;
 }
-header h1{
+header > h1{
     background-color: grey;
     margin: 0px;
 }
-header h2{
+header > h2{
     background-color: darkgray;
     margin: 0px;
 }
 nav{
     background-color: purple;
 }
-nav ul{
+nav > ul{
     list-style-type: none;
 }
-nav li {
+nav > ul > li {
     display: inline;
 }
 video{
