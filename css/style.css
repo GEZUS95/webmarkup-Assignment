@@ -8,10 +8,12 @@ header img {
     width: 150px;
 }
 header h1{
-    background-color: darkgrey;
+    background-color: grey;
+    margin: 0px;
 }
 header h2{
-    background-color: gray;
+    background-color: darkgray;
+    margin: 0px;
 }
 nav{
     background-color: purple;
