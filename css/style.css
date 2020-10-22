@@ -53,3 +53,7 @@ aside{
     flex-grow: 0;
     flex-shrink: 0;
 }
+#cookie{
+    background-color: #FA0, 50%;
+    color: #FFF;
+}
