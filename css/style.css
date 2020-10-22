@@ -30,3 +30,7 @@ nav > ul > li {
 video{
     background-color: indianred;
 }
+
+main{
+    display: flex;
+}
