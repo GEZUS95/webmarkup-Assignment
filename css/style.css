@@ -44,16 +44,26 @@ article{
 
 #article1{
     background-color: #00ff00;
-   
+    float: left;
+    flex-basis: 66.7%;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 #article2{
     background-color: #0000FF;
-    
+    float: left;
+    flex-basis: 66.6%;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 #article3{
     background-color: lightblue;
+    float: left;
+    flex-basis: 66.7%;
+    flex-shrink: 1;
+    flex-grow: 1;
     
 }
 
@@ -61,17 +71,25 @@ article{
     float: right;
     margin: 0 0 0 15px;
 }
+.product-img > p {
+    margin: auto;
+}
+.product-img img {
+    width: 150px;
+}
 
 aside{
     float: right;
     flex-grow: 0;
     flex-shrink: 0;
-    flex: 33.3%;
+    flex-basis: 33.3%;
+    background-color: sandybrown;
     
 }
 
-body > footer p{
+body > footer{
     background-color: #F0F;
+    padding: 5px;
 }
 
 #cookie{
