@@ -36,6 +36,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 article{
@@ -45,7 +46,7 @@ article{
 #article1{
     background-color: #00ff00;
     float: left;
-    flex-basis: 66.7%;
+    flex-basis: auto;
     flex-shrink: 1;
     flex-grow: 1;
 }
@@ -53,7 +54,7 @@ article{
 #article2{
     background-color: #0000FF;
     float: left;
-    flex-basis: 66.6%;
+    flex-basis: auto;
     flex-shrink: 1;
     flex-grow: 1;
 }
@@ -61,7 +62,7 @@ article{
 #article3{
     background-color: lightblue;
     float: left;
-    flex-basis: 66.7%;
+    flex-basis: auto;
     flex-shrink: 1;
     flex-grow: 1;
     
@@ -71,14 +72,12 @@ article{
     float: right;
     margin: 0 0 0 15px;
 }
-.product-img > p {
-    margin: auto;
-}
+
 .product-img img {
     width: 150px;
 }
 
-aside{
+aside {
     float: right;
     flex-grow: 0;
     flex-shrink: 0;
