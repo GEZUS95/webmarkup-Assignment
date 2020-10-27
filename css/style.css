@@ -4,7 +4,7 @@ body > header{
     background-color: #000000;
     color: #ffffff;
 }
-body > header > img {
+body header img {
     width: 150px;
 }
 body > header > h1{
@@ -44,14 +44,22 @@ article{
 
 #article1{
     background-color: #00ff00;
+   
 }
 
 #article2{
     background-color: #0000FF;
+    
 }
 
 #article3{
     background-color: lightblue;
+    
+}
+
+.product-img{
+    float: right;
+    margin: 0 0 0 15px;
 }
 
 aside{
@@ -62,7 +70,7 @@ aside{
     
 }
 
-footer > p{
+body > footer p{
     background-color: #F0F;
 }
 
