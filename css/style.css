@@ -1,5 +1,10 @@
 /* Basic css for PC (> 1280px)*/
-
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
 body > header{
     background-color: #000000;
     color: #ffffff;
@@ -27,18 +32,27 @@ nav > ul > li {
     display: inline;
     padding: 5px;
 }
-video{
-    background-color: indianred;
-    width: 100%;
-    display: none;
-}
+
 
 main{
     display: flex;
 }
 
-main > article{
+video{
+  background-color: indianred;
+  width: 100%;
+  display: none;
+  order:1;
+}
+article > h3 {
+    display: inline;
+    margin-top: 0px;
+}
+article {
     padding: 5px;
+}
+.articles{
+    order:2;
     flex-flow: column;
 }
 
@@ -49,13 +63,13 @@ main > article{
 
 #article2{
     background-color: #0000FF;
-    order: 1;
+    order: 2;
 
 }
 
 #article3{
     background-color: lightblue;
-    order: 1;
+    order: 3;
 
     
 }
