@@ -33,16 +33,15 @@ nav > ul > li {
     padding: 5px;
 }
 
-
 main{
     display: flex;
+    flex-flow: row wrap;
 }
 
 video{
-  background-color: indianred;
-  width: 100%;
-  display: none;
-  order:1;
+    background-color: indianred;
+    flex: 100%;  
+    order:1;
 }
 article > h3 {
     display: inline;
@@ -52,6 +51,7 @@ article {
     padding: 5px;
 }
 .articles{
+    flex-basis: 66.6%;
     order:2;
     flex-flow: column;
 }
@@ -64,14 +64,11 @@ article {
 #article2{
     background-color: #0000FF;
     order: 2;
-
 }
 
 #article3{
     background-color: lightblue;
     order: 3;
-
-    
 }
 
 .product-img{
@@ -87,7 +84,6 @@ aside {
     order: 2;
     flex-basis: 33.3%;
     background-color: sandybrown;
-    
 }
 
 body > footer{
@@ -102,4 +98,20 @@ body > footer{
     position: fixed;
     right: 0px;
     bottom: 0px;
+}
+
+@media screen and (max-width: 1280px) {
+    aside {
+        order 1;
+    }
+    #article3{
+        background-color: #00ff00;
+    }
+    #article2
+
+}
+
+@media screen and (max-width: 480px) {
+
+    
 }
