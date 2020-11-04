@@ -63,7 +63,7 @@ article {
 }
 
 #article2{
-    background-color: #0000FF;
+    background-color: #00ffff;
     order: 2;
 }
 
@@ -120,17 +120,26 @@ body > footer{
         background-color: lightblue;
     }
     #article1 {
-        background-color: #00F;
+        background-color: #00ffff;
     }
     .product-img{
         float: left;
         margin: 0 10px 0 0;
     }
-    
-
 }
 
 @media screen and (max-width: 480px) {
-
+    #article3{
+        background-color: lightblue;
+    }
+    #article2 {
+        background-color: #00ffff;
+    }
+    #article1 {
+        background-color: #0f0;
+    }
+    .product-img{
+        margin: auto;
+    }
     
 }
