@@ -20,15 +20,23 @@
             <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="howsolarworks.html">How solar works</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="eusolar.html">EUSolar</a></li>
         </ul>
     </nav>
     
     <main>
-        <table>
-
-        </table>
-        <p>Source of data &copy; 2020 Eurostat</p>
+        <form action="http://i-want-solar-energy.com/testform.php" method="POST"> 
+            <fieldset>
+                <legend>Your Question:</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" required>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
     </main>
     <aside>
         
