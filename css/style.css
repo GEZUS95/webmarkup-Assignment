@@ -92,6 +92,13 @@ aside {
     background-color: sandybrown;
 }
 
+.promo-img img{
+    width: 150px;
+    display: block;
+    padding: 10px;
+}
+
+
 footer{
     background-color: #F0F;
     padding: 5px;
