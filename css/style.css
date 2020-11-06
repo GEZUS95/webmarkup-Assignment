@@ -92,9 +92,11 @@ aside {
     background-color: sandybrown;
 }
 
-body > footer{
+footer{
     background-color: #F0F;
     padding: 5px;
+    position: static;
+    bottom: 0px;
 }
 
 #cookie{
@@ -104,6 +106,7 @@ body > footer{
     position: fixed;
     right: 0px;
     bottom: 0px;
+    width: 33.3%;
 }
 
 @media screen and (max-width: 1280px) {
