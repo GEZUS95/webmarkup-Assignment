@@ -123,6 +123,21 @@ footer{
     width: 33.3%;
 }
 
+a > img {
+    width: 150px;
+
+}
+/* Table */
+table {
+    background-color: #0ff;
+}
+thead{
+    background-color: white;
+}
+tr:nth-child(even){
+    background-color: #00f;
+}
+
 @media screen and (max-width: 1280px) {
     
 
@@ -149,6 +164,9 @@ footer{
     .product-img{
         float: left;
         margin: 0 10px 0 0;
+    }
+    .promo-img-1 {
+        display: none;
     }
 }
 
