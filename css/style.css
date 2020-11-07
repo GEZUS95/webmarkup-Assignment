@@ -151,6 +151,9 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
+    header img {
+        display: none;
+    }
     #article3{
         background-color: lightblue;
     }
@@ -161,10 +164,20 @@ footer{
         background-color: #0f0;
     }
     .product-img{
-        text-align: center;
+        /* text-align: center;
         float: none;
         margin: auto;
         bottom: 0px;
+        vertical-align: bottom; */
+        display: none;
+    }
+    .prod-img-mobile {
+        display: unset;
+    }
+    .prod-img-mobile img {
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
     }
     video {
         display: none;
