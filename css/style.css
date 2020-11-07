@@ -90,7 +90,9 @@ article {
 .product-img img {
     width: 150px;
 }
-
+.prod-img-mobile {
+    display: none;
+}
 aside {
     order: 2;
     flex-basis: 33.3%;
@@ -172,12 +174,13 @@ footer{
         display: none;
     }
     .prod-img-mobile {
-        display: unset;
+        display: block;
+        text-align: center;
     }
     .prod-img-mobile img {
         width: 150px;
-        margin-left: auto;
-        margin-right: auto;
+        display: inline;
+        margin: auto;
     }
     video {
         display: none;
