@@ -168,6 +168,14 @@ tr:nth-child(even){
     .promo-img-1 {
         display: none;
     }
+    .promo-img-2 {
+        display: inline;
+        text-align: start;
+    }
+    .promo-img-3{
+        display: inline;
+        text-align: end;
+    }
 }
 
 @media screen and (max-width: 480px) {
