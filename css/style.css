@@ -296,11 +296,10 @@ tr:nth-child(even){
     }
     .prod-img-mobile {
         display: block;
-        text-align: center;
     }
     .prod-img-mobile img {
         width: 150px;
-        display: inline;
+        display: block;
         margin: auto;
     }
     video {
