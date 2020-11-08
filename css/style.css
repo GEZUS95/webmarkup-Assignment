@@ -105,7 +105,6 @@ article {
     padding: 10px;
 }
 
-
 footer{
     background-color: #F0F;
     padding: 5px;
@@ -128,14 +127,36 @@ a > img {
 
 }
 /* Table */
+.grid-eu{
+    display: grid;
+    grid:
+    't1 t1 p1'
+    't2 t2 t2';
+}
 table {
     background-color: #0ff;
+    border: 1px solid black;
+    grid-area: t1;
 }
 thead{
     background-color: white;
 }
 tr:nth-child(even){
     background-color: #00f;
+}
+td, th {
+    border: 1px solid black;
+}
+.tfoot {
+    grid-area: t2;
+}
+.promo-solar-table{
+    grid-area: p1;
+    display: grid;
+    grid:
+    'p1'
+    'p2'
+    'p3';
 }
 
 /* Grid stuff */
@@ -276,6 +297,13 @@ tr:nth-child(even){
         display:  none;
     }
 
+    .promo-solar-table {
+        grid: 'p2 p3';
+    }
+    .promo-solar-table > .promo-img-1{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -373,5 +401,21 @@ tr:nth-child(even){
     }
     .aside-grid > .promo-img-3 {
         display:  unset;
+    }
+
+    .grid-eu {
+        grid:
+        't1'
+        't2'
+        'p1'
+    }
+    .promo-solar-table {
+        grid: 
+        'p1'
+        'p2'
+        'p3';
+    }
+    .promo-solar-table > .promo-img-1{
+        display: unset;
     }
 }
