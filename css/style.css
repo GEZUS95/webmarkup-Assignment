@@ -206,7 +206,7 @@ tr:nth-child(even){
 @media screen and (max-width: 1280px) {
     
 
-    aside {
+    .aside-flex {
         order: 1;
         flex-basis: 100%;
     }
@@ -214,6 +214,7 @@ tr:nth-child(even){
         order: 2;
     }
     .articles {
+        order: 3;
         flex-flow: column-reverse;
         flex-basis: 100%;
     }
@@ -240,6 +241,10 @@ tr:nth-child(even){
     .promo-solar > .promo-img-3{
         display: inline;
         text-align: end;
+    }
+
+    #cookie {
+        width: 50%;
     }
 
     /* Grid stuff */
@@ -277,6 +282,9 @@ tr:nth-child(even){
     header img {
         display: none;
     }
+    .articles {
+        order: 2;
+    }
     #article3{
         background-color: lightblue;
     }
@@ -305,6 +313,7 @@ tr:nth-child(even){
     video {
         display: none;
     }
+
     .toggle, .menu_toggle, [id^=drop] { display: none; }
     .menu *{ text-align: center; }
     
