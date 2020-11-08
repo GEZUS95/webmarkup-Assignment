@@ -93,7 +93,7 @@ article {
 .prod-img-mobile {
     display: none;
 }
-aside {
+.aside-flex {
     order: 2;
     flex-basis: 33.3%;
     background-color: sandybrown;
@@ -138,6 +138,71 @@ tr:nth-child(even){
     background-color: #00f;
 }
 
+/* Grid stuff */
+.grid-container {
+    display: grid;
+    grid:
+    'a2 a1 a3'
+    'a2 a1 a3'
+    'a5 a1 a3'
+    'a5 a1 a4'
+    'a5 a1 a4'
+    'a5 a1 a4'
+    'a5 a6 a6';
+}
+
+.grid-1 {
+    grid-area: a1;
+    background-color: lightblue;
+}
+
+.grid-2 {
+    grid-area: a2;
+    background-color: #0ff;
+}
+
+.grid-3 {
+    grid-area: a3;
+    background-color: #0aa;
+}
+
+.grid-4 {
+    grid-area: a4;
+    background-color: lightcyan;
+}
+
+.grid-5 {
+    grid-area: a5;
+    background-color: lightgray;
+}
+
+.grid-6 {
+    grid-area: a6;
+    background-color: lightgoldenrodyellow;
+}
+
+.aside-grid {
+    display: grid;
+    grid:
+    'p1 p2 p3';
+}
+
+.aside-grid > .promo-img-1 {
+    grid-area: p1;
+    background-color: #00ff00;
+}
+
+.aside-grid > .promo-img-2 {
+    grid-area: p2;
+    background-color: #00ffff;
+}
+
+.aside-grid > .promo-img-3 {
+    grid-area: p3;
+    background-color: lightblue;
+}
+
+
 @media screen and (max-width: 1280px) {
     
 
@@ -165,17 +230,47 @@ tr:nth-child(even){
         float: left;
         margin: 0 10px 0 0;
     }
-    .promo-img-1 {
+    .promo-solar > .promo-img-1 {
         display: none;
     }
-    .promo-img-2 {
+    .promo-solar > .promo-img-2 {
         display: inline;
         text-align: start;
     }
-    .promo-img-3{
+    .promo-solar > .promo-img-3{
         display: inline;
         text-align: end;
     }
+
+    /* Grid stuff */
+
+    .grid-container {
+        grid: 
+        'a1 a2'
+        'a1 a2'
+        'a3 a2'
+        'a3 a5'
+        'a3 a5'
+        'a3 a5'
+        'a6 a6'
+        'a6 a6'
+        ;
+    }
+
+    .grid-4 {
+        display: none;
+    }
+
+    .aside-grid {
+        grid:
+        'p1 p2'
+        ;
+    }
+
+    .aside-grid > .promo-img-3 {
+        display:  none;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -246,5 +341,29 @@ tr:nth-child(even){
     nav ul li {
         display: block;
         width: 100%;
+    }
+
+    /* Grid stuff */
+
+    .grid-container {
+        grid:
+        'a5'
+        'a3'
+        'a2'
+        'a1';
+    }
+    .grid-4 , .grid-6 {
+        display: none;
+    }
+
+    .aside-grid {
+        grid:
+        'p1'
+        'p2'
+        'p3';
+        text-align: center;
+    }
+    .aside-grid > .promo-img-3 {
+        display:  unset;
     }
 }
