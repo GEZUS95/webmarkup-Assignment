@@ -7,6 +7,7 @@
     <meta name="description" content="Contact page for Inholland solar energy">
     <meta name="author" content="Cees Gribnau" >
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <title>EUSolar</title>
 </head>
@@ -26,7 +27,7 @@
         </ul>
     </nav>
     
-    <main>
+    <main class="form">
         <form action="http://i-want-solar-energy.com/testform.php" method="POST"> 
             <fieldset>
                 <legend>Your Question:</legend>
@@ -35,22 +36,23 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
                 <label for="message">Message</label>
-                <input type="text" id="message" name="message" required>
+                <textarea id="message" name="message" required></textarea>
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
-    </main>
-    <aside>
-        <article class="promo-img">
+    
+    <aside class="promo">
+        <article class="img-1">
             <a href="https://www.ikwilzonneenergie.nl/"><img src="img/victronMPPT.png"></a>
         </article>
-        <article class="promo-img">
+        <article class="img-2">
             <a href="https://www.ikwilzonneenergie.nl/"><img src="img/steca-solarix-2525-solar-laadregelaar-12v-24v.jpg"></a>
         </article>
-        <article class="promo-img">
+        <article class="img-3">
             <a href="https://www.ikwilzonneenergie.nl/"><img src="img/victronMultiplus.jpg"></a>
         </article>
     </aside>
+</main>
     <footer>
         <p>
             &copy; 2020 Cees Gribnau
